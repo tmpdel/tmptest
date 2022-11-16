@@ -1,0 +1,16 @@
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: template-name
+  title: template-title
+  description: This is a sample template
+spec:
+  owner: backstage/techdocs-core
+  type: service
+  
+    steps:
+      -  id: log-message
+         name: Log Message
+         action: debug:log
+         input:
+           message: Hello {{ }}
