@@ -8,9 +8,9 @@ spec:
   owner: backstage/techdocs-core
   type: service
   
-    steps:
-      -  id: log-message
-         name: Log Message
-         action: debug:log
-         input:
-           message: Hello {{ }}
+  steps:
+    - id: log-message
+      name: Log Message
+      action: debug:log
+        input:
+          message: Hello {{ }}
